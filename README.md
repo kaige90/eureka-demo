@@ -7,3 +7,13 @@
 1. 先启动discovery模块;
 2. 启动service0,service1模块;
 3. 启动consumer0,consumer1模块;
+
+## 访问服务
+### 访问注册中心
+```
+http://localhost:1111
+```
+### 访问服务
+```
+http://localhost:10090/hello
+```
