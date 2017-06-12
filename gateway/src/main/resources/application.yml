@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 10084
+
+#强制不注册到注册服务器
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+#网关配置
+suul:
+  route:
+    service0: /service0/**
+    service1: /service1/**
+
+
+

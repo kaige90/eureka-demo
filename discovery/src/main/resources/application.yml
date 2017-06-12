@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 1111
+
+#强制不注册到注册服务器
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/
+ #注册中心地址
+ #驱逐下线的服务，间隔,5秒，默认是60，建议开发和测试环境配置
+  server:
+    evictionIntervalTimerInMs: 5000
+
+
+
