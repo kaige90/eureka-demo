@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class MessageController {
-    @RequestMapping(value = "/service0", method = RequestMethod.GET)
+    @RequestMapping(value = "/service1", method = RequestMethod.GET)
     public String service0(){
         return "Welcome to service 1";
     }

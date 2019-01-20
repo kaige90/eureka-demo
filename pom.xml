@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.rfchina.smartshop</groupId>
+	<groupId>com.chenkai.springcloud</groupId>
 	<artifactId>eureka</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<modules>
 		<module>discovery</module>
 		<module>service0</module>
@@ -15,14 +15,13 @@
 	</modules>
 	<packaging>pom</packaging>
 
-	<name>eureka</name>
-	<description>Demo project for Spring Boot</description>
+	<name>spring-cloud</name>
+	<description>spring cloud的示例项目</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.1.2.RELEASE</version>
 	</parent>
 
 	<dependencyManagement>
@@ -30,7 +29,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Camden.SR6</version>
+				<version>Finchley.SR2</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -56,11 +55,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-ribbon</artifactId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
 		</dependency>
 	</dependencies>
 
